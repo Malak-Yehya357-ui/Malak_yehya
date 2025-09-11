@@ -361,6 +361,66 @@
                 gap: 10px;
             }
         }
+        /* زرار About Me */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 25px;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+    margin-top: 20px;
+}
+
+.btn i {
+    margin-left: 8px;
+    font-size: 1.2rem;
+}
+
+/* عند الهوفر */
+.btn:hover {
+    background: linear-gradient(to right, var(--secondary), var(--primary));
+    transform: translateY(-3px);
+}
+
+/* معالجة مشكلة الموبايل */
+@media (max-width: 768px) {
+    .home .content {
+        text-align: center;
+    }
+    .home .btn {
+        width: 100%;
+        max-width: 250px;
+        margin: 20px auto;
+        display: block;
+    }
+    .home .socials {
+        margin-top: 15px;
+    }
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .social-icons li {
+        list-style: none;
+    }
+    .social-icons a {
+        font-size: 1.5rem;
+        color: var(--primary);
+        transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+        color: var(--secondary);
+    }
+}
+
         
     </style>
 
@@ -865,3 +925,4 @@ Love to tackle complex data challenges and build end-to-end data systems." </p>
 
 </body>
 </html>
+
